@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-feature
+        android:name="android.hardware.sensor.accelerometer"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SarongStyles"
+        tools:targetApi="31">
+        <activity
+            android:name=".Activity.PasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ShopDataActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.OrderDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.OrderProceedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.MapActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.PaymentDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.DeliveryDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.CheckoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.CategoryViseItemView"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ItemDetailView"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ItemViewAll"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.CategoryViewAll"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.SignUpScreen"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.SignInScreen"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.IntroScreen"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.MainActivity"
+            android:exported="false">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="${MAPS_API_KEY}" />
+    </application>
+
+</manifest>

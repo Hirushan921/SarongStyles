@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.DeliveryDetailsActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="25dp"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/circle_background">
+
+                <ImageView
+                    android:id="@+id/back_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_baseline_arrow_back_24"
+                    app:tint="#1D1E20"></ImageView>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Delivery Details"
+                android:textColor="@color/text_dark"
+                android:textSize="17sp"
+                app:fontFamily="@font/sfprobold" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/sfprobold"
+            android:text="Full Name"
+            android:textColor="#1D1E20"
+            android:textSize="17sp" />
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edit_full_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="textCapWords"
+            android:textSize="16sp"
+            android:hint="Type your name"
+            android:background="@drawable/editbox"
+            android:theme="@style/MyEditText"
+            android:textColor="@color/text_dark"
+            android:textColorHint="@color/text_light"
+            android:padding="9dp"
+            android:layout_marginTop="15dp" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/sfprobold"
+            android:text="Phone Number"
+            android:textColor="#1D1E20"
+            android:textSize="17sp" />
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edit_mobile_number"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="textCapWords"
+            android:textSize="16sp"
+            android:hint="Type your number"
+            android:background="@drawable/editbox"
+            android:theme="@style/MyEditText"
+            android:textColor="@color/text_dark"
+            android:textColorHint="@color/text_light"
+            android:padding="9dp"
+            android:layout_marginTop="15dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/sfprobold"
+            android:text="Address"
+            android:textColor="#1D1E20"
+            android:textSize="17sp" />
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edit_address"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="textCapWords"
+            android:textSize="16sp"
+            android:hint="Type your address"
+            android:background="@drawable/editbox"
+            android:theme="@style/MyEditText"
+            android:textColor="@color/text_dark"
+            android:textColorHint="@color/text_light"
+            android:padding="9dp"
+            android:layout_marginTop="15dp" />
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:fontFamily="@font/sfprobold"-->
+<!--            android:text="Set Delivery Location (Optional)"-->
+<!--            android:textColor="#1D1E20"-->
+<!--            android:textSize="17sp" />-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:fontFamily="@font/sfproregular"-->
+<!--            android:text="If Your delivery address is same as your current location you can set location."-->
+<!--            android:textColor="#1D1E20"-->
+<!--            android:textSize="14sp" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/mapSetButton"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:text="Go to map"-->
+<!--            android:textAllCaps="false"-->
+<!--            android:textSize="16sp"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:backgroundTint="@color/shipped_color"-->
+<!--            android:fontFamily="@font/sfproregular"-->
+<!--            android:layout_height="wrap_content"/>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/location_added"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:fontFamily="@font/sfproregular"-->
+<!--            android:visibility="invisible"-->
+<!--            android:text="Location Added"-->
+<!--            android:textColor="@color/shipped_color"-->
+<!--            android:textSize="14sp" />-->
+<!--        <TextView-->
+<!--            android:id="@+id/location_save"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:fontFamily="@font/sfproregular"-->
+<!--            android:visibility="invisible"-->
+<!--            android:text="No"-->
+<!--            android:textColor="@color/text_dark"-->
+<!--            android:textSize="14sp" />-->
+
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:layout_height="wrap_content">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:fontFamily="@font/sfprobold"-->
+<!--                android:text="Save as primary address"-->
+<!--                android:textColor="#1D1E20"-->
+<!--                android:textSize="17sp" />-->
+
+<!--            <androidx.appcompat.widget.SwitchCompat-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentRight="true"-->
+<!--                android:checked="true"-->
+<!--                app:thumbTint="#34C559" />-->
+
+
+
+<!--        </RelativeLayout>-->
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/save_data"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/apptheme">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:fontFamily="@font/sfproregular"
+            android:text="Save"
+            android:textColor="#fff"
+            android:textSize="17sp" />
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

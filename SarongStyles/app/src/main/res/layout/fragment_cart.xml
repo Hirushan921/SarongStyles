@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:scrollbars="vertical"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:fontFamily="@font/sfprobold"
+                android:text="Delivery Details"
+                android:textColor="#1D1E20"
+                android:textSize="17sp" />
+
+
+
+            <RelativeLayout
+                android:id="@+id/setDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/card_background"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/location" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/image"
+                    android:gravity="left"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Name"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                        android:textColor="@color/text_dark"
+                        android:textSize="15sp"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        app:fontFamily="@font/sfproregular" />
+                    <TextView
+                        android:id="@+id/address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Address"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                        android:textColor="@color/text_dark"
+                        android:textSize="15sp"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        app:fontFamily="@font/sfproregular" />
+                    <TextView
+                        android:id="@+id/mobile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mobile number"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                        android:textColor="@color/text_dark"
+                        android:textSize="15sp"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        app:fontFamily="@font/sfproregular" />
+<!--                    <TextView-->
+<!--                        android:id="@+id/location"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Location"-->
+<!--                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"-->
+<!--                        android:textColor="@color/text_light"-->
+<!--                        android:textSize="15sp"-->
+<!--                        android:maxLines="1"-->
+<!--                        android:ellipsize="end"-->
+<!--                        app:fontFamily="@font/sfproregular" />-->
+
+
+                </LinearLayout>
+
+
+
+
+            </RelativeLayout>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:fontFamily="@font/sfprobold"
+                android:text="Payment Method"
+                android:textColor="#1D1E20"
+                android:textSize="17sp" />
+
+            <RelativeLayout
+                android:id="@+id/paymentType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/check2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true">
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="22dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        app:srcCompat="@drawable/check" />
+
+
+                </RelativeLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/text_hold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/check2"
+                    android:gravity="left"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="Online Payments Only."
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                        android:textColor="@color/text_dark"
+                        android:textSize="15sp"
+                        app:fontFamily="@font/sfproregular" />
+
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/setPayment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/card_background"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/imagevisa"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/bank_card_2" />
+
+                <LinearLayout
+                    android:id="@+id/text_hold2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/imagevisa"
+                    android:gravity="left"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/payment_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="No Card"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                        android:textColor="@color/text_dark"
+                        android:textSize="16sp"
+                        app:fontFamily="@font/sfpromedium" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/payment_card"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="*************"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                            android:textColor="@color/text_light"
+                            android:textSize="14sp"
+                            app:fontFamily="@font/sfproregular" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:fontFamily="@font/sfprobold"
+                android:text="Order info"
+                android:textColor="#1D1E20"
+                android:textSize="17sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sfpromedium"
+                    android:text="Subtotal"
+                    android:textColor="@color/text_light"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/subTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:fontFamily="@font/sfprobold"
+                    android:text="0"
+                    android:textColor="@color/text_dark"
+                    android:textSize="15sp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sfpromedium"
+                    android:text="Shipping Cost"
+                    android:textColor="@color/text_light"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/dCost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sfprobold"
+                    android:layout_alignParentRight="true"
+                    android:text="0"
+                    android:textColor="@color/text_dark"
+                    android:textSize="15sp" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sfpromedium"
+                    android:text="Total"
+                    android:textColor="@color/text_light"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/priceTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:fontFamily="@font/sfprobold"
+                    android:text="0"
+                    android:textColor="@color/shipped_color"
+                    android:textSize="15sp" />
+
+
+            </RelativeLayout>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_checkout2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="CheckOut"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textAllCaps="false"
+                android:layout_marginBottom="25dp"
+                android:textSize="17sp"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/sfproregular"
+                android:background="@drawable/background_button" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

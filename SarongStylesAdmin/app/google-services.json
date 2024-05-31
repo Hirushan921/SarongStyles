@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "455740725106",
+    "project_id": "sarongstyles",
+    "storage_bucket": "sarongstyles.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:455740725106:android:53592a5f38a37e7887afeb",
+        "android_client_info": {
+          "package_name": "com.jiat.sarongstyles"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeVdO7KqHsLAUja8pu0dEzZAhSBy1lETU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:455740725106:android:95e67011db803fca87afeb",
+        "android_client_info": {
+          "package_name": "com.jiat.sarongstylesadmin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeVdO7KqHsLAUja8pu0dEzZAhSBy1lETU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

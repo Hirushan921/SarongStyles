@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.SignInScreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/sfprobold"
+            android:text=" ADMIN SIGN IN"
+            android:textColor="#1D1E20"
+            android:textSize="28sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please enter your data to continue"
+            android:fontFamily="@font/sfproregular"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:textColor="#8F959E" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email Address"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/sfproregular"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                    android:textColor="#8F959E" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edit_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="-4dp"
+                        android:layout_marginRight="-4dp"
+                        android:fontFamily="@font/sfproregular"
+                        android:inputType="text"
+                        android:maxLength="50"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="#1D1E20"
+                        android:textSize="17sp"
+                        android:theme="@style/editTextLogin" />
+
+                    <ImageView
+                        android:id="@+id/email_check"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:visibility="gone"
+                        android:src="@drawable/ic_baseline_check_24"
+                        android:layout_gravity="center|right"
+                        app:tint="#34C358">
+                    </ImageView>
+
+                </FrameLayout>
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Password"
+                    android:layout_marginTop="15dp"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/sfproregular"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                    android:textColor="#8F959E" />
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edit_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="-4dp"
+                        android:layout_marginRight="-4dp"
+                        android:fontFamily="@font/sfproregular"
+                        android:inputType="textPassword"
+                        android:maxLength="50"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="#1D1E20"
+                        android:textSize="17sp"
+                        android:theme="@style/editTextLogin" />
+
+
+                    <TextView
+                        android:id="@+id/pass_strong"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Strong"
+                        android:visibility="gone"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/sfproregular"
+                        android:layout_gravity="center|right"
+                        android:textColor="#34C358" />
+
+                </FrameLayout>
+
+
+                <TextView
+                    android:id="@+id/forgotpass_click"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Forgot password?"
+                    android:textSize="16sp"
+                    android:layout_marginTop="15dp"
+                    android:layout_gravity="right"
+                    android:fontFamily="@font/sfproregular"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                    android:textColor="#EA4335" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="right"
+                        android:fontFamily="@font/sfproregular"
+                        android:text="Remember me"
+                        android:textColor="#1D1E20"
+                        android:textSize="15sp" />
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        app:thumbTint="#34C559" />
+
+
+
+                </RelativeLayout>
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Login"
+                    android:layout_marginTop="25dp"
+                    android:textAllCaps="false"
+                    android:textSize="17sp"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/sfproregular"
+                    android:background="@drawable/background_button" />
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+

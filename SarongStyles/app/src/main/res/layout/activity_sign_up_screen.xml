@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.SignUpScreen">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical">
+
+
+
+        <RelativeLayout
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/circle_background">
+
+            <ImageView
+                android:id="@+id/back_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                app:tint="#1D1E20"></ImageView>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:fontFamily="@font/sfprobold"
+            android:textSize="28sp"
+            android:layout_gravity="center"
+            android:textColor="#1D1E20"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/first_name"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/sfproregular"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                    android:textColor="#8F959E" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edit_firstname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="-4dp"
+                        android:layout_marginRight="-4dp"
+                        android:fontFamily="@font/sfproregular"
+                        android:inputType="text"
+                        android:maxLength="50"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="#1D1E20"
+                        android:textSize="17sp"
+                        android:theme="@style/editTextLogin" />
+
+                    <ImageView
+                        android:id="@+id/firstname_check"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:src="@drawable/ic_baseline_check_24"
+                        android:layout_gravity="center|right"
+                        android:visibility="gone"
+                        app:tint="#34C358">
+                    </ImageView>
+
+                </FrameLayout>
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/last_name"
+                    android:textSize="14sp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/sfproregular"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                    android:textColor="#8F959E" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edit_lastname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="-4dp"
+                        android:layout_marginRight="-4dp"
+                        android:fontFamily="@font/sfproregular"
+                        android:inputType="text"
+                        android:maxLength="50"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="#1D1E20"
+                        android:textSize="17sp"
+                        android:theme="@style/editTextLogin" />
+
+                    <ImageView
+                        android:id="@+id/lastname_check"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:src="@drawable/ic_baseline_check_24"
+                        android:layout_gravity="center|right"
+                        android:visibility="gone"
+                        app:tint="#34C358">
+                    </ImageView>
+
+                </FrameLayout>
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email Address"
+                    android:layout_marginTop="15dp"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/sfproregular"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                    android:textColor="#8F959E" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edit_emailaddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="-4dp"
+                        android:layout_marginRight="-4dp"
+                        android:fontFamily="@font/sfproregular"
+                        android:inputType="textEmailAddress"
+                        android:maxLength="50"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="#1D1E20"
+                        android:textSize="17sp"
+                        android:theme="@style/editTextLogin" />
+
+                    <ImageView
+                        android:id="@+id/email_check"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:src="@drawable/ic_baseline_check_24"
+                        android:layout_gravity="center|right"
+                        android:visibility="gone"
+                        app:tint="#34C358">
+                    </ImageView>
+
+                </FrameLayout>
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/create_password"
+                    android:layout_marginTop="15dp"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/sfproregular"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                    android:textColor="#8F959E" />
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edit_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="-4dp"
+                        android:layout_marginRight="-4dp"
+                        android:fontFamily="@font/sfproregular"
+                        android:inputType="text"
+                        android:maxLength="50"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="#1D1E20"
+                        android:textSize="17sp"
+                        android:theme="@style/editTextLogin" />
+
+
+                    <TextView
+                        android:id="@+id/pass_strong"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Strong"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/sfproregular"
+                        android:layout_gravity="center|right"
+                        android:visibility="gone"
+                        android:textColor="#34C358" />
+
+                </FrameLayout>
+
+
+
+
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_signUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Sign Up"
+                    android:layout_marginTop="25dp"
+                    android:textAllCaps="false"
+                    android:textSize="17sp"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/sfproregular"
+                    android:background="@drawable/background_button" />
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account?"
+            android:fontFamily="@font/sfproregular"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:textColor="#8F959E" />
+
+        <TextView
+            android:id="@+id/signin_click"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Signin"
+            android:fontFamily="@font/sfpromedium"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:textColor="#1D1E20" />
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
+

@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical">
+
+    <!-- Home Text-->
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ADMIN PANEL"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:fontFamily="@font/sfprobold"
+                android:textSize="28sp"
+                android:layout_gravity="left"
+                android:textColor="@color/apptheme"/>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_select"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="5dp"
+                app:cardCornerRadius="5dp"
+                app:cardBackgroundColor="@color/grey_10"
+                app:cardElevation="2dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/section1"
+                        android:layout_width="110dp"
+                        android:background="@drawable/card_background"
+                        android:layout_height="110dp">
+
+                        <ImageView
+                            android:id="@+id/item_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ti" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/section2"
+                        android:layout_toRightOf="@+id/section1"
+                        android:layout_centerVertical="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/item_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginRight="8dp"
+                            android:fontFamily="@font/sfprosemibold"
+                            android:lineSpacingExtra="10px"
+                            android:text="Active Items"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@color/apptheme"
+                            android:textSize="22sp" />
+
+                        <TextView
+                            android:id="@+id/total_items"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_below="@id/item_name"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="8dp"
+                            android:fontFamily="@font/sfpromedium"
+                            android:lineSpacingExtra="10px"
+                            android:text="0000"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@color/text_dark"
+                            android:textSize="19sp" />
+                    </RelativeLayout>
+
+
+
+
+
+
+
+                </RelativeLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_select2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="5dp"
+                app:cardBackgroundColor="@color/grey_10"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="2dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/section3"
+                        android:layout_width="110dp"
+                        android:background="@drawable/card_background"
+                        android:layout_height="110dp">
+
+                        <ImageView
+                            android:id="@+id/item_image2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/tc" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/section4"
+                        android:layout_toRightOf="@+id/section3"
+                        android:layout_centerVertical="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/totalcat"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginRight="8dp"
+                            android:fontFamily="@font/sfprosemibold"
+                            android:lineSpacingExtra="10px"
+                            android:text="Active Categories"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@color/apptheme"
+                            android:textSize="22sp" />
+
+                        <TextView
+                            android:id="@+id/total_cat"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_below="@id/totalcat"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="8dp"
+                            android:fontFamily="@font/sfpromedium"
+                            android:lineSpacingExtra="10px"
+                            android:text="0000"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@color/text_dark"
+                            android:textSize="19sp" />
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_select3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="5dp"
+                app:cardBackgroundColor="@color/grey_10"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="2dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/section5"
+                        android:layout_width="110dp"
+                        android:background="@drawable/card_background"
+                        android:layout_height="110dp">
+
+                        <ImageView
+                            android:id="@+id/item_image3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/to" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/section6"
+                        android:layout_toRightOf="@+id/section5"
+                        android:layout_centerVertical="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/totalOrders"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginRight="8dp"
+                            android:fontFamily="@font/sfprosemibold"
+                            android:lineSpacingExtra="10px"
+                            android:text="Total Orders"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@color/apptheme"
+                            android:textSize="22sp" />
+
+                        <TextView
+                            android:id="@+id/total_orders"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_below="@id/totalOrders"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="8dp"
+                            android:fontFamily="@font/sfpromedium"
+                            android:lineSpacingExtra="10px"
+                            android:text="0000"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@color/text_dark"
+                            android:textSize="19sp" />
+                    </RelativeLayout>
+
+
+
+
+
+
+
+                </RelativeLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_select4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="5dp"
+                app:cardBackgroundColor="@color/grey_10"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="2dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/section7"
+                        android:layout_width="110dp"
+                        android:background="@drawable/card_background"
+                        android:layout_height="110dp">
+
+                        <ImageView
+                            android:id="@+id/item_image4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/tu" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/section8"
+                        android:layout_toRightOf="@+id/section7"
+                        android:layout_centerVertical="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/totalCus"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginRight="8dp"
+                            android:fontFamily="@font/sfprosemibold"
+                            android:lineSpacingExtra="10px"
+                            android:text="Total Customers"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@color/apptheme"
+                            android:textSize="22sp" />
+
+                        <TextView
+                            android:id="@+id/total_cus"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_below="@id/totalCus"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="8dp"
+                            android:fontFamily="@font/sfpromedium"
+                            android:lineSpacingExtra="10px"
+                            android:text="0000"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@color/text_dark"
+                            android:textSize="19sp" />
+                    </RelativeLayout>
+
+
+
+
+
+
+
+                </RelativeLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+</LinearLayout>

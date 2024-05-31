@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical">
+
+    <!-- Home Text-->
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:fontFamily="@font/sfprobold"
+                android:textSize="28sp"
+                android:layout_gravity="left"
+                android:textColor="#1D1E20"/>
+
+            <!-- Welcome Text-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome to Sarong Styles"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:fontFamily="@font/sfproregular"
+                android:textSize="18sp"
+                android:layout_gravity="left"
+                android:textColor="#8F959E" />
+
+
+            <!--Search EditBox-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_toLeftOf="@+id/search"
+                    android:background="@drawable/search_background">
+
+
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/edit_username"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/sfproregular"
+                        android:hint="Search..."
+                        android:inputType="text"
+                        android:maxLength="50"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="#1D1E20"
+                        android:textColorHint="@color/text_light"
+                        android:textSize="17sp"
+                        android:theme="@style/editTextSearch" />
+
+
+
+
+                </RelativeLayout>
+
+                <!--Search Button-->
+
+
+                <RelativeLayout
+                    android:id="@+id/search"
+                    android:layout_width="50dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/speak_background"
+                    android:layout_height="50dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"
+                        app:srcCompat="@drawable/ic_search" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+            <!--Choose Category-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sfpromedium"
+                    android:text="Select Your Style.."
+                    android:textColor="#1D1E20"
+                    android:textSize="17sp" />
+
+            </RelativeLayout>
+
+            <!--category List-->
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/button_category"
+                        android:layout_width="177dp"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/gradient2"
+                        android:fontFamily="@font/sfproregular"
+                        android:text="Categories"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/button_sarong"
+                        android:layout_width="177dp"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/gradient1"
+                        android:fontFamily="@font/sfproregular"
+                        android:text="Sarongs"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+
+
+                </LinearLayout>
+
+
+
+
+            <!--New Arrival-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_height="wrap_content">
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:fontFamily="@font/sfpromedium"-->
+<!--                    android:text="New Arrival"-->
+<!--                    android:textColor="#1D1E20"-->
+<!--                    android:textSize="17sp" />-->
+
+                <TextView
+                    android:id="@+id/newarrival_viewall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/sfproregular"
+                    android:text="View All"
+                    android:textColor="#8F959E"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical"
+                android:scrollingCache="true"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+</LinearLayout>

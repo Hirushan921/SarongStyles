@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.ShopDataActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/gradient_card"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+
+            <RelativeLayout
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/circle_background">
+
+                <ImageView
+                    android:id="@+id/back_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_baseline_arrow_back_24"
+                    app:tint="#1D1E20"></ImageView>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Shop Details"
+                android:textColor="@color/text_dark"
+                android:textSize="17sp"
+                app:fontFamily="@font/sfprobold" />
+
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/privacy_holder1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/order_background"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/priv_title1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@color/deep_green"
+                android:textSize="15sp"
+                app:fontFamily="@font/sfprobold" />
+
+            <TextView
+                android:id="@+id/priv_desc1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relative_titlehold"
+                android:layout_marginTop="5dp"
+                android:text="No.32/3,"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textColor="@color/text_dark"
+                android:textSize="14sp"
+                app:fontFamily="@font/sfproregular" />
+            <TextView
+                android:id="@+id/priv_desc2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relative_titlehold"
+                android:layout_marginTop="5dp"
+                android:text="Nikaweratiya,"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textColor="@color/text_dark"
+                android:textSize="14sp"
+                app:fontFamily="@font/sfproregular" />
+            <TextView
+                android:id="@+id/priv_desc3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relative_titlehold"
+                android:layout_marginTop="5dp"
+                android:text="Kurunegala."
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textColor="@color/text_dark"
+                android:textSize="14sp"
+                app:fontFamily="@font/sfproregular" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/privacy_holder2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/order_background"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/priv_title2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email Address"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@color/deep_green"
+                android:textSize="15sp"
+                app:fontFamily="@font/sfprobold" />
+
+            <TextView
+                android:id="@+id/priv_desc4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relative_titlehold"
+                android:layout_marginTop="5dp"
+                android:text="info@sarongstyles.com"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textColor="@color/text_dark"
+                android:textSize="14sp"
+                app:fontFamily="@font/sfproregular" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/privacy_holder3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/order_background"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/priv_title3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contact"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@color/deep_green"
+                android:textSize="15sp"
+                app:fontFamily="@font/sfprobold" />
+
+            <TextView
+                android:id="@+id/priv_desc5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relative_titlehold"
+                android:layout_marginTop="5dp"
+                android:text="0741225494"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textColor="@color/text_dark"
+                android:textSize="14sp"
+                app:fontFamily="@font/sfproregular" />
+            <TextView
+                android:id="@+id/priv_desc6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relative_titlehold"
+                android:layout_marginTop="5dp"
+                android:text="0741388771"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textColor="@color/text_dark"
+                android:textSize="14sp"
+                app:fontFamily="@font/sfproregular" />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+    <View
+        android:id="@+id/gradient_card"
+        android:layout_above="@+id/call_shop"
+        android:background="@drawable/gradinet"
+        android:layout_width="match_parent"
+        android:layout_height="5dp">
+    </View>
+
+    <RelativeLayout
+        android:id="@+id/call_shop"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/apptheme">
+
+        <ImageView
+            android:id="@+id/call_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/call_icon"
+            app:tint="#fff"></ImageView>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

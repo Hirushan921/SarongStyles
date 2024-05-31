@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!--    <color name="black">#000000</color>-->
+    <color name="grey">#a9a9a9</color>
+    <color name="red">#d32f2f</color>
+    <color name="transparent">#00000000</color>
+<!--    <color name="white">#ffffff</color>-->
+    <declare-styleable name="OtpTextView">
+        <attr name="android:textColor"/>
+        <attr format="string" name="otp"/>
+        <attr format="boolean" name="hide_otp"/>
+        <attr format="reference" name="hide_otp_drawable"/>
+        <attr format="integer" name="length"/>
+        <attr format="dimension" name="width"/>
+        <attr format="dimension" name="height"/>
+        <attr format="dimension" name="box_margin"/>
+        <attr format="dimension" name="box_margin_left"/>
+        <attr format="dimension" name="box_margin_right"/>
+        <attr format="dimension" name="box_margin_top"/>
+        <attr format="dimension" name="box_margin_bottom"/>
+        <attr format="dimension" name="bar_height"/>
+        <attr format="boolean" name="bar_enabled"/>
+        <attr format="reference" name="otp_box_background"/>
+        <attr format="reference" name="otp_box_background_active"/>
+        <attr format="reference" name="otp_box_background_inactive"/>
+        <attr format="reference" name="otp_box_background_success"/>
+        <attr format="reference" name="otp_box_background_error"/>
+        <attr format="dimension" name="bar_margin"/>
+        <attr format="dimension" name="bar_margin_bottom"/>
+        <attr format="dimension" name="bar_margin_right"/>
+        <attr format="dimension" name="bar_margin_left"/>
+        <attr format="dimension" name="bar_margin_top"/>
+        <attr format="dimension" name="otp_text_size"/>
+        <attr format="color" name="bar_active_color"/>
+        <attr format="color" name="bar_inactive_color"/>
+        <attr format="color" name="bar_error_color"/>
+        <attr format="color" name="bar_success_color"/>
+        <attr format="string" name="text_typeface"/>
+    </declare-styleable>
+<!--    <string name="app_name">OTPTextView</string>-->
+
+
+
+</resources>

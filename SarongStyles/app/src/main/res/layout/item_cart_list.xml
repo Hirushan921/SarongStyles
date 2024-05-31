@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="2dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/section1"
+                android:layout_width="110dp"
+                android:background="@drawable/card_background"
+                android:layout_height="110dp">
+
+                <ImageView
+                    android:id="@+id/item_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/no_image" />
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/section2"
+                android:layout_toRightOf="@+id/section1"
+                android:layout_toLeftOf="@+id/section3"
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/item_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="8dp"
+                    android:fontFamily="@font/sfprobold"
+                    android:lineSpacingExtra="10px"
+                    android:text="pure white sarong"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/text_dark"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/item_qty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/item_name"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="8dp"
+                    android:fontFamily="@font/sfpromedium"
+                    android:text="2 Sarongs"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/text_light"
+                    android:textSize="12sp" />
+                <TextView
+                    android:id="@+id/item_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/item_qty"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="8dp"
+                    android:fontFamily="@font/sfpromedium"
+                    android:text="LKR 2000.00"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/text_light"
+                    android:textSize="12sp" />
+                <TextView
+                    android:id="@+id/item_deliveryCharge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/item_price"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/sfpromedium"
+                    android:text="LKR 300.00 (delivery charge)"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/text_light"
+                    android:textSize="12sp" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/section3"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="end"
+                android:layout_height="110dp">
+
+                <RelativeLayout
+                    android:id="@+id/cart_delete"
+                    android:layout_width="25dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/qty_unselect"
+                    android:layout_height="25dp">
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="5dp"
+                        app:tint="@color/text_light"
+                        android:src="@drawable/ic_delete" />
+                </RelativeLayout>
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

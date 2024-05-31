@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    tools:context=".Activity.OrderProceedActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:layout_width="45dp"
+            android:layout_height="25dp"
+            android:background="@drawable/circle_background">
+
+            <ImageView
+                android:id="@+id/back_Home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_home"
+                app:tint="#1D1E20"></ImageView>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Order"
+            android:textColor="@color/text_dark"
+            android:textSize="17sp"
+            app:fontFamily="@font/sfprobold" />
+
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/order_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/sfprobold"
+                android:text="Confirmed"
+                android:textColor="@color/shipped_color"
+                android:textSize="16sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_View_order"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="View Order Details"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textAllCaps="false"
+                android:layout_marginBottom="25dp"
+                android:textSize="17sp"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/sfproregular"
+                android:background="@drawable/background_button" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/sfprobold"
+                android:text="Set Delivery Location (Optional)"
+                android:textColor="#1D1E20"
+                android:textSize="17sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center"
+                android:fontFamily="@font/sfproregular"
+                android:text="If Your delivery address is same as your current location you can set location."
+                android:textColor="#1D1E20"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/mapSetButton"
+                android:layout_width="wrap_content"
+                android:text="Go to map"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="@color/shipped_color"
+                android:fontFamily="@font/sfproregular"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/location_added"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/sfproregular"
+                android:visibility="invisible"
+                android:layout_gravity="center"
+                android:text="Location Attached"
+                android:textColor="@color/shipped_color"
+                android:textSize="14sp" />
+<!--            <TextView-->
+<!--                android:id="@+id/location_save"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:fontFamily="@font/sfproregular"-->
+<!--                android:visibility="invisible"-->
+<!--                android:text="No"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:textColor="@color/text_dark"-->
+<!--                android:textSize="14sp" />-->
+<!--            <Button-->
+<!--                android:id="@+id/button_proceed"-->
+<!--                android:layout_width="250dp"-->
+<!--                android:text="Save Location"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textSize="16sp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:backgroundTint="@color/shipped_color"-->
+<!--                android:fontFamily="@font/sfproregular"-->
+<!--                android:layout_height="wrap_content"/>-->
+
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

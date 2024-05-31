@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Sarong Styles</string>
+    <string name="web_client_id">455740725106-9qmnj19mmj5spairq1orgvrqoblfmcui.apps.googleusercontent.com</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="email_address">Email Address</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="create_password">Create Password</string>
+    <string name="password">Password</string>
+</resources>
